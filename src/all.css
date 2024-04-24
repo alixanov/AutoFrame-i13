@@ -1,0 +1,351 @@
+@font-face {
+  src: url(./components/fonts/Poppins-Medium.ttf);
+  font-family: Nunito;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #fbf7f3;
+}
+
+#root {
+  max-width: 1920px;
+  width: 100%;
+}
+.primary {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 85px;
+}
+nav {
+  width: 100%;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 11%;
+  background-color: #18c0c1;
+  /* Добавляем прикрепление к верху страницы */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* если надо, чтобы навбар был поверх других элементов */
+}
+
+#hr {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo > a > h3 {
+  color: white;
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: Nunito system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  cursor: pointer;
+}
+
+.a-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.logo-txt > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Nunito;
+  transition: color 0.1s ease-in-out;
+}
+.logo-txt:active {
+  background-color: #2222224e;
+  border-radius: 8px;
+}
+
+.logo-txt > a > img:active {
+  color: #2222226b;
+}
+.main-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 40px;
+}
+.main-page {
+  width: 100%;
+  padding: 2% 11%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left {
+  width: 550px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.title-aos > b:nth-child(1) {
+  background: linear-gradient(#18c0c1, #546a82);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Nunito;
+  font-size: 26px;
+  word-spacing: 1px;
+}
+.left > span {
+  background: linear-gradient(#18c0c1, #2262a5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Nunito;
+  font-size: 25px;
+  word-spacing: 1px;
+  font-weight: bold;
+}
+
+.left > p {
+  letter-spacing: 1px;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: Nunito;
+  word-spacing: 4px;
+}
+
+.right > img {
+  width: 420px;
+  height: 360px;
+}
+.main-txt-page {
+  width: 100%;
+  padding: 2% 11%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-title > p {
+  color: #222222;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Nunito;
+  line-height: 27px;
+}
+.main-txt-page > span {
+  color: #222222;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: Nunito;
+  word-spacing: 2px;
+  padding-top: 20px;
+  line-height: 27px;
+}
+.line {
+  height: 2px;
+  align-items: start;
+  background-color: #222222;
+}
+
+.staty {
+  width: 100%;
+  padding: 2% 11%;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: Nunito;
+  word-spacing: 2px;
+  padding-top: 20px;
+  line-height: 27px;
+}
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 2% 11%;
+  background-color: #18c0c1;
+}
+.footer-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-top > p {
+  font-size: 17px;
+  font-weight: 500;
+  font-family: Nunito;
+  color: white;
+}
+.footer-top > p:nth-child(2) {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Nunito;
+  color: white;
+}
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-bottom > p {
+  font-size: 17px;
+  font-weight: 500;
+  font-family: Nunito;
+  color: white;
+}
+.footer-bottom > h5 > a {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: Nunito;
+  color: white;
+}
+.footer-bottom > h5 {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: Nunito;
+  color: white;
+  cursor: pointer;
+}
+.manual {
+  width: 100%;
+  padding: 2% 11%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.theme-one {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  text-align: start;
+  flex-direction: column;
+  padding-bottom: 60px;
+}
+.theme-title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.theme-title > p {
+  color: #222222c0;
+  font-size: 23px;
+  font-weight: 700;
+}
+.theme-title > p:nth-child(2) {
+  color: #222222c0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.theme-order > span {
+  color: #222222c0;
+  font-size: 15px;
+  font-weight: bold;
+}
+.theme-order {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  text-align: start;
+  flex-direction: column;
+  margin-top: 18px;
+}
+.info-sources {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2% 11%;
+}
+.title-sources > p {
+  color: #222222c0;
+  font-size: 25px;
+  font-weight: 700;
+}
+.title-sources > span {
+  color: #222222c0;
+  font-size: 19px;
+  font-weight: 400;
+  word-spacing: 2px;
+}
+.author-info {
+  width: 100%;
+  height: 70vh;
+  padding: 2% 6%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.top-info > span {
+  color: #222222c0;
+  font-size: 19px;
+  font-weight: 400;
+  word-spacing: 2px;
+}
+.bottom-info {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.left-info > p {
+  color: #222222c0;
+  font-size: 19px;
+  font-weight: bold;
+  word-spacing: 2px;
+}
+.right-info {
+  width: 400px;
+}
+.right-info > span {
+  color: #222222c0;
+  font-size: 19px;
+  font-weight: 400;
+  word-spacing: 2px;
+}
+.file-download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.fade-right {
+  margin-left: 200px;
+}
+
+[data-aos="custom"] {
+  transform: translateY(100px);
+}
+[data-aos="custom"] {
+  transform: translateY(0);
+}
