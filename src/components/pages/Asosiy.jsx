@@ -33,7 +33,7 @@ const Asosiy = () => {
             data-aos-delay="150"
             data-aos-duration="1000"
           >
-            "TRANSPORT VOSITALARI MUHANDISLIGI"
+            "AVTOMOBILLAR KONSTRUKSIYASI FАNIDАN ELEKTRON DARSLIK"{" "}
           </span>
           <p
             data-aos="fade-right"
